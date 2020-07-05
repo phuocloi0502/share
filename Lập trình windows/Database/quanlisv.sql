@@ -16,8 +16,15 @@ Create table KHOA(
 	tenkhoa nvarchar(200) not null
 )
 
+Create table TAIKHOAN(
+	taikhoan varchar(50) not null,
+	matkhau varchar(50) not null,
+	quyen int not null
+)
+
 Alter table SINHVIEN ADD CONSTRAINT ms PRIMARY KEY(mssv)
 Alter table KHOA ADD CONSTRAINT mk PRIMARY KEY(makhoa)
+Alter table TAIKHOAN ADD CONSTRAINT tk PRIMARY KEY(taikhoan)
 
 Alter table SINHVIEN ADD FOREIGN  KEY(makhoa) REFERENCES KHOA(makhoa)
 ON delete cascade ON update cascade;

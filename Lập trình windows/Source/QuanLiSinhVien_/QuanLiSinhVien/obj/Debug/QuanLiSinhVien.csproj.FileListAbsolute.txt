@@ -18,3 +18,13 @@ E:\git\share\Lập trình windows\Source\QuanLiSinhVien\QuanLiSinhVien\obj\Debug
 E:\git\share\Lập trình windows\Source\QuanLiSinhVien\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.csproj.CoreCompileInputs.cache
 E:\git\share\Lập trình windows\Source\QuanLiSinhVien\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.exe
 E:\git\share\Lập trình windows\Source\QuanLiSinhVien\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.pdb
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\bin\Debug\QuanLiSinhVien.exe.config
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\bin\Debug\QuanLiSinhVien.exe
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\bin\Debug\QuanLiSinhVien.pdb
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.csprojAssemblyReference.cache
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.Form1.resources
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.Properties.Resources.resources
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.csproj.GenerateResource.cache
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.csproj.CoreCompileInputs.cache
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.exe
+C:\Users\PhuocLoi\Documents\GitHub\share\Lập trình windows\Source\QuanLiSinhVien_\QuanLiSinhVien\obj\Debug\QuanLiSinhVien.pdb

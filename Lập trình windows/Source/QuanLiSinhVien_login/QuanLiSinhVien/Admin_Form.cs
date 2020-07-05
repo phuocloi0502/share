@@ -219,7 +219,35 @@ namespace QuanLiSinhVien
             Xoa();
         }
 
+        private void thoátToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
 
+            DialogResult hoi;
+            hoi = MessageBox.Show("Bạn có muốn thoát ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (hoi == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            DialogResult hoi;
+            hoi = MessageBox.Show("Bạn có muốn đăng xuất ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (hoi == DialogResult.Yes)
+            {
+                Dangnhap dangnhap = new Dangnhap();
+                dangnhap.Show();
+                this.Hide();
+            }
+           
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bạn là admin");
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

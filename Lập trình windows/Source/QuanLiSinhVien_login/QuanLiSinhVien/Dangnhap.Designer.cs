@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txbmssv = new System.Windows.Forms.TextBox();
+            this.txbdn = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbmk = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnthem = new System.Windows.Forms.Button();
+            this.btndn = new System.Windows.Forms.Button();
+            this.btnthoat = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txbmssv
+            // txbdn
             // 
-            this.txbmssv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbmssv.Location = new System.Drawing.Point(167, 106);
-            this.txbmssv.Name = "txbmssv";
-            this.txbmssv.Size = new System.Drawing.Size(203, 30);
-            this.txbmssv.TabIndex = 4;
+            this.txbdn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbdn.Location = new System.Drawing.Point(167, 106);
+            this.txbdn.Name = "txbdn";
+            this.txbdn.Size = new System.Drawing.Size(203, 30);
+            this.txbdn.TabIndex = 4;
             // 
             // label3
             // 
@@ -55,13 +56,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Tên đăng nhập:";
             // 
-            // textBox1
+            // txbmk
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(167, 166);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 30);
-            this.textBox1.TabIndex = 6;
+            this.txbmk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbmk.Location = new System.Drawing.Point(167, 166);
+            this.txbmk.Name = "txbmk";
+            this.txbmk.PasswordChar = '*';
+            this.txbmk.Size = new System.Drawing.Size(203, 30);
+            this.txbmk.TabIndex = 6;
             // 
             // label1
             // 
@@ -86,31 +88,48 @@
             this.label2.Text = "Đăng nhập";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnthem
+            // btndn
             // 
-            this.btnthem.BackColor = System.Drawing.Color.Cyan;
-            this.btnthem.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.ForeColor = System.Drawing.Color.Black;
-            this.btnthem.Location = new System.Drawing.Point(144, 253);
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(150, 49);
-            this.btnthem.TabIndex = 9;
-            this.btnthem.Text = "Đăng nhập";
-            this.btnthem.UseVisualStyleBackColor = false;
+            this.btndn.BackColor = System.Drawing.Color.Cyan;
+            this.btndn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndn.ForeColor = System.Drawing.Color.Black;
+            this.btndn.Location = new System.Drawing.Point(67, 253);
+            this.btndn.Name = "btndn";
+            this.btndn.Size = new System.Drawing.Size(136, 49);
+            this.btndn.TabIndex = 9;
+            this.btndn.Text = "Đăng nhập";
+            this.btndn.UseVisualStyleBackColor = false;
+            this.btndn.Click += new System.EventHandler(this.btndn_Click);
+            // 
+            // btnthoat
+            // 
+            this.btnthoat.BackColor = System.Drawing.Color.Cyan;
+            this.btnthoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnthoat.ForeColor = System.Drawing.Color.Black;
+            this.btnthoat.Location = new System.Drawing.Point(234, 253);
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(136, 49);
+            this.btnthoat.TabIndex = 10;
+            this.btnthoat.Text = "Thoát";
+            this.btnthoat.UseVisualStyleBackColor = false;
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // Dangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 387);
-            this.Controls.Add(this.btnthem);
+            this.Controls.Add(this.btnthoat);
+            this.Controls.Add(this.btndn);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txbmk);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txbmssv);
+            this.Controls.Add(this.txbdn);
             this.Controls.Add(this.label3);
             this.Name = "Dangnhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dangnhap";
+            this.Load += new System.EventHandler(this.Dangnhap_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,11 +137,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txbmssv;
+        private System.Windows.Forms.TextBox txbdn;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbmk;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnthem;
+        private System.Windows.Forms.Button btndn;
+        private System.Windows.Forms.Button btnthoat;
     }
 }
