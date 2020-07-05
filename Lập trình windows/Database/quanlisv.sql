@@ -20,6 +20,7 @@ Alter table SINHVIEN ADD CONSTRAINT ms PRIMARY KEY(mssv)
 Alter table KHOA ADD CONSTRAINT mk PRIMARY KEY(makhoa)
 
 Alter table SINHVIEN ADD FOREIGN  KEY(makhoa) REFERENCES KHOA(makhoa)
+ON delete cascade ON update cascade;
 
 Insert into KHOA values('CNTT',N'Công nghệ thông tin')
 Insert into KHOA values('DDT',N'Điện điện tử')
