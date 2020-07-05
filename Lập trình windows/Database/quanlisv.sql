@@ -16,15 +16,17 @@ Create table KHOA(
 	tenkhoa nvarchar(200) not null
 )
 
-Create table TAIKHOAN(
+Create table THANHVIEN(
 	taikhoan varchar(50) not null,
 	matkhau varchar(50) not null,
 	quyen int not null
 )
 
+
+
 Alter table SINHVIEN ADD CONSTRAINT ms PRIMARY KEY(mssv)
 Alter table KHOA ADD CONSTRAINT mk PRIMARY KEY(makhoa)
-Alter table TAIKHOAN ADD CONSTRAINT tk PRIMARY KEY(taikhoan)
+Alter table THANHVIEN ADD CONSTRAINT tk PRIMARY KEY(taikhoan)
 
 Alter table SINHVIEN ADD FOREIGN  KEY(makhoa) REFERENCES KHOA(makhoa)
 ON delete cascade ON update cascade;
@@ -40,4 +42,7 @@ Insert into SINHVIEN values('17104019',N'Ngô Minh Kha',N'Nam','06/06/1999',N'C�
 Insert into SINHVIEN values('17104020',N'Nguyễn Duy Huỳnh',N'Nữ','07/05/1999',N'Vĩnh Long','CNTT')
 Insert into SINHVIEN values('17104021',N'Đoàn Tuấn Kiệt',N'Nam','08/04/1999',N'Đồng Tháp','CNSH')
 Insert into SINHVIEN values('17104022',N'Nguyễn Quốc thắng',N'Nữ','09/03/1999',N'Vĩnh Long','DDT')
+
+Insert into THANHVIEN values('admin','admin','1')
+Insert into THANHVIEN values('user','user','0')
 
