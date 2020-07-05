@@ -46,3 +46,5 @@ Insert into SINHVIEN values('17104022',N'Nguyễn Quốc thắng',N'Nữ','09/03
 Insert into THANHVIEN values('admin','admin','1')
 Insert into THANHVIEN values('user','user','0')
 
+
+drop database QUANLISINHVIEN
