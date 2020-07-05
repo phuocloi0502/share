@@ -1,6 +1,6 @@
 ﻿namespace QuanLiSinhVien
 {
-	partial class Form1
+	partial class Admin_Form
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txbhoten = new System.Windows.Forms.TextBox();
@@ -45,14 +44,14 @@
             this.btnthoat = new System.Windows.Forms.Button();
             this.btnsua = new System.Windows.Forms.Button();
             this.datagridvewSV = new System.Windows.Forms.DataGridView();
-            this.cbkhoa = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.mssv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quequan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenkhoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbkhoa = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txbqq = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.datagridvewSV)).BeginInit();
@@ -240,40 +239,11 @@
             this.ngaysinh,
             this.quequan,
             this.tenkhoa});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagridvewSV.DefaultCellStyle = dataGridViewCellStyle7;
             this.datagridvewSV.Location = new System.Drawing.Point(0, 19);
             this.datagridvewSV.Name = "datagridvewSV";
             this.datagridvewSV.Size = new System.Drawing.Size(986, 308);
             this.datagridvewSV.TabIndex = 16;
             this.datagridvewSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagridvewSV_CellClick);
-            // 
-            // cbkhoa
-            // 
-            this.cbkhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbkhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbkhoa.FormattingEnabled = true;
-            this.cbkhoa.Location = new System.Drawing.Point(593, 208);
-            this.cbkhoa.Name = "cbkhoa";
-            this.cbkhoa.Size = new System.Drawing.Size(202, 28);
-            this.cbkhoa.TabIndex = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(521, 211);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 25);
-            this.label7.TabIndex = 18;
-            this.label7.Text = "Khoa:";
             // 
             // mssv
             // 
@@ -317,6 +287,27 @@
             this.tenkhoa.HeaderText = "Khoa";
             this.tenkhoa.Name = "tenkhoa";
             // 
+            // cbkhoa
+            // 
+            this.cbkhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbkhoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbkhoa.FormattingEnabled = true;
+            this.cbkhoa.Location = new System.Drawing.Point(593, 208);
+            this.cbkhoa.Name = "cbkhoa";
+            this.cbkhoa.Size = new System.Drawing.Size(202, 28);
+            this.cbkhoa.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Blue;
+            this.label7.Location = new System.Drawing.Point(521, 211);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 25);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Khoa:";
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.datagridvewSV);
@@ -335,7 +326,7 @@
             this.txbqq.Size = new System.Drawing.Size(203, 30);
             this.txbqq.TabIndex = 6;
             // 
-            // Form1
+            // Admin_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -361,9 +352,9 @@
             this.Controls.Add(this.txbhoten);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Admin_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Admin";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagridvewSV)).EndInit();
             this.groupBox1.ResumeLayout(false);

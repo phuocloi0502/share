@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace QuanLiSinhVien
 {
-    public partial class Form1 : Form
+    public partial class Admin_Form : Form
     {
         // Khai báo
         public String string_connec = "Data Source=" + SystemInformation.UserDomainName.ToString() + "\\SQLEXPRESS;Database=QUANLISINHVIEN;User Id=sa;Password=123456";
@@ -91,6 +91,7 @@ namespace QuanLiSinhVien
                     red.Read();
                     makhoa = red.GetValue(0).ToString().Trim();
                     red.Close();
+
                     string sql_them = "Insert into SINHVIEN values('" + txbmssv.Text + "',N'" + txbhoten.Text + "',N'" + gt + "','" + datens.Value.ToString() + "',N'" + txbqq.Text + "','" + makhoa + "')";
                     cmd = new SqlCommand(sql_them, con);
                     cmd.ExecuteNonQuery();
@@ -185,7 +186,7 @@ namespace QuanLiSinhVien
 
        
 
-        public Form1()
+        public Admin_Form()
         {
             InitializeComponent();
         }
