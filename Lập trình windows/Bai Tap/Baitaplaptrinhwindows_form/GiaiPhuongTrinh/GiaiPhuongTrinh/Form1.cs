@@ -51,13 +51,13 @@ namespace GiaiPhuongTrinh
             {
                 if (string.IsNullOrWhiteSpace(txba.Text) || string.IsNullOrWhiteSpace(txbb.Text) )
                 {
-                    MessageBox.Show("Nhập đầy đủ thông tin");
+                    MessageBox.Show("Vui lòng Nhập đầy đủ thông tin");
                 }
                 else
                 {
                     try
                     {
-                       
+                       //start
                         a = Convert.ToDouble(txba.Text);
                         b = Convert.ToDouble(txbb.Text);
                         if (a != 0)
@@ -75,6 +75,7 @@ namespace GiaiPhuongTrinh
                                 txbkq.Text = "Phương trình có vô số nghiệm";
                             }
                         }
+                        //end
                     }
                     catch (Exception)
                     {
